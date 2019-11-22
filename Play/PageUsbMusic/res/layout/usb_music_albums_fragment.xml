@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <com.egar.usbmusic.view.IndexTitleScrollView
+        android:layout_alignParentLeft="true"
+        android:id="@+id/indexScroll"
+        android:layout_width="100dp"
+        android:layout_height="match_parent">
+
+    </com.egar.usbmusic.view.IndexTitleScrollView>
+
+    <ListView
+        android:layout_toRightOf="@id/indexScroll"
+        android:id="@+id/lv_artist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+    <TextView
+        android:id="@+id/tv_center_char"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/index_char_bg"
+        android:gravity="center"
+        android:textSize="70sp"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="960dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/bt_main_bg"
+        android:orientation="horizontal">
+
+        <com.egar.mediaui.view.MyButton
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/radio_select"
+            android:background="@drawable/bt_left_bg"
+             />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:src="@drawable/close"
+            ></ImageView>
+        <RelativeLayout
+            android:id="@+id/relayout_main"
+            android:layout_width="match_parent"
+            android:layout_marginRight="130dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/star"
+           android:gravity="center"
+            >
+            <Button
+                android:layout_marginRight="50dp"
+                android:id="@+id/btn_radio"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="@string/radio"
+                android:background="@null"
+                android:drawableTop="@drawable/radio_select"
+                android:paddingTop="15dp"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+          <LinearLayout
+               android:layout_marginRight="50dp"
+                android:layout_toRightOf="@id/btn_radio"
+                android:id="@+id/btn_usb_media"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+              android:paddingTop="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_usb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/usb_upper"
+                    android:drawableTop="@drawable/usb_select"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:id="@+id/page_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:layout_toRightOf="@id/btn_usb_media"
+                android:id="@+id/btn_bt_music"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:drawableTop="@drawable/bt_select"
+                android:gravity="center"
+                android:background="@null"
+                android:text="@string/bluetooth"
+                android:paddingTop="15dp"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+        <com.egar.mediaui.view.MyButton
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bt_right_bg"
+            android:id="@+id/jinhao"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+             />
+        <ImageView
+            android:paddingTop="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/screen"/>
+    </RelativeLayout>
+</LinearLayout>

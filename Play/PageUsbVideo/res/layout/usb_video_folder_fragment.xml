@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/usb_folder_frag"
+    android:background="@color/color_red_040"
+    android:orientation="vertical">
+    <com.egar.usbmusic.view.IndexTitleScrollView
+        android:layout_width="100dp"
+        android:layout_height="match_parent">
+
+    </com.egar.usbmusic.view.IndexTitleScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+</RelativeLayout>

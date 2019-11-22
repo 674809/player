@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="147dp"
+        android:background="@drawable/play_main_bg"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        >
+
+        <com.egar.mediaui.view.MyButton
+            android:id="@+id/bt_folder"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/play_left_bg"
+            android:src="@drawable/usb_file" />
+
+        <RelativeLayout
+            android:id="@+id/paly_main"
+            android:layout_width="588dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/bt_folder">
+
+            <ImageView
+                android:id="@+id/bt_prev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/prev_ico"
+                android:gravity="center"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/bt_palyOrPause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/play_ico"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/bt_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@null"
+                android:src="@drawable/next_ico"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <com.egar.mediaui.view.MyButton
+            android:id="@+id/bt_loop"
+            android:layout_toRightOf="@id/paly_main"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/usb_loop"
+            android:background="@drawable/play_right_bg" />
+
+    </RelativeLayout>
+

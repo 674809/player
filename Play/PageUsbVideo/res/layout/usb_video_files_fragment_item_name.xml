@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/v_name"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="30sp" />
+
+
+</LinearLayout>

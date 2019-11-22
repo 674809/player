@@ -1,0 +1,4 @@
+<resources>
+    <string name="usb_image_no_img">NO IMAGE</string>
+    <string name="usb_image_desc">Usb image description</string>
+</resources>
